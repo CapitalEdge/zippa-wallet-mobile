@@ -1,0 +1,4 @@
+# ignores all .env files
+.env*
+eas*
+eas.json

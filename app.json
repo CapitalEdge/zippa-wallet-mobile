@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "Zippa Wallet",
+    "slug": "zippa-wallet",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "zippa-app",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/zippa-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#00053C"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zippawallet.io"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#00053C"
+      },
+      "package": "com.zippawallet.io",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-document-picker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Zippa wallet requires permission for photo upload."
+        }
+      ]
+    ],
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "2a54e9fe-2e18-46db-bc0d-c07bc06aac72"
+      }
+    },
+    "owner": "zippawallet"
+  }
+}
